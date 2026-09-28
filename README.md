@@ -20,9 +20,17 @@ This repository documents my learning journey through the VSD Bandgap Voltage Re
 ## 🗂️ Repository Structure
 
 The documentation is organized day-wise:
+Bandgap-Voltage-Reference-VSDWorkshop/
+├── Day1/
+│ └── README.md
+├── Day2/
+│ └── README.md
+├── Day3/
+│ └── README.md
+└── ...
 
 
-Each `DayN` folder contains a `README.md` documenting:
+Each `Day` folder contains a `README.md` documenting:
 
 - 📘 **Concepts** covered that day
 - 🧪 **Lab experiments** performed
@@ -38,7 +46,7 @@ Each `DayN` folder contains a `README.md` documenting:
 
 ## 🛠️ Tools Used
 
-- _List the simulators/tools used in the labs (e.g., ngspice, Xschem, Magic, etc.)_
+- _NgSPice, Netgen, Magic_
 
 ## 🙏 Acknowledgements
 
