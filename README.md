@@ -38,17 +38,10 @@ Each `DayN` folder contains a `README.md` documenting:
 - 🧪 **Lab experiments** performed
 - 📝 **Observations and results**
 
-## 📅 Day-wise Index
-
-| Day | Topics Covered | Link |
-|-----|----------------|------|
-| Day 1 | _Coming soon_ | [Day1](./Day1) |
-| Day 2 | _Coming soon_ | [Day2](./Day2) |
-| Day 3 | _Coming soon_ | [Day3](./Day3) |
 
 ## 🛠️ Tools Used
 
-- _List the simulators/tools used in the labs_
+- _NgSpice, Magic, Netgen_
 
 ## 🙏 Acknowledgements
 
@@ -57,8 +50,6 @@ Thanks to **VSD** for conducting the workshop.
 ## 👤 Author
 
 **G Charukesh**
-Final-year B.E. ECE, M.S. Ramaiah Institute of Technology, Bengaluru
-
 ---
 
 <p align="center">⭐ If you find this useful, consider starring the repo!</p>
