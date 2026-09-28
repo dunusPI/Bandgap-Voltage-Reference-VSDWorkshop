@@ -23,6 +23,3 @@ Once net1 rises, the NMOS mirror devices (MN1 and MN2) turn on. This makes the s
 
 Once the loop is running, the net2 voltage drops below the level needed to keep MP5 on. The start-up circuit then stops injecting current, so it does not disturb the BGR during normal operation.
 
-## Lab
-
-To be added soon.
