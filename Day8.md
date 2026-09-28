@@ -24,7 +24,7 @@ There are also skewed corners, fs and sf, where one device type is fast and the 
 
 A bandgap reference is meant to be insensitive to PVT variations, so it has to be verified across corners as well as across temperature. In each corner the mirror transistors, and depending on the PDK the resistors and BJTs, take slightly different values. This shifts the bias current and the CTAT/PTAT balance, and therefore the shape of the Vref vs temperature curve and its temperature coefficient. The simulations below compare Vref across the three corners.
 
-## Lab
+## Lab 7 Component
 
 ### Circuit
 
