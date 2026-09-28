@@ -4,7 +4,7 @@
 
 ## Reference Branch Circuit
 
-<img width="800" alt="Reference branch circuit" src="PASTE-IMAGE-LINK-HERE" />
+<img width="800" alt="Reference branch circuit" src="https://github.com/user-attachments/assets/45346c72-b014-4120-934c-1bf4d1c5581a" />
 
 The reference branch is the third branch of the BGR. It is where the CTAT and PTAT voltages generated earlier are added together to give the final reference voltage Vref.
 
@@ -25,7 +25,7 @@ Vref = VBE3 + α Vt ln(N)
 
 ## Design of R2 Resistance
 
-<img width="800" alt="Design of R2 resistance" src="PASTE-IMAGE-LINK-HERE" />
+<img width="800" alt="Design of R2 resistance" src="https://github.com/user-attachments/assets/ebb649ff-c798-4c59-8744-f82bb60ade0b" />
 
 The temperature coefficient of Vref should be zero. All the other values are known, so α can be calculated easily, and then R2 = α × R1.
 
