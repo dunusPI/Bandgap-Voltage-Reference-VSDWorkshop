@@ -4,7 +4,8 @@
 
 ## Complete BGR Circuit
 
-<img width="800" alt="Complete BGR circuit" src="PASTE-IMAGE-LINK-HERE" />
+<img width="800" alt="Complete BGR circuit" src="https://github.com/user-attachments/assets/078b7a78-d3d7-4a7e-8d02-357bf971a74c" />
+
 
 The complete circuit is made of four blocks, each of which was covered on an earlier day:
 
