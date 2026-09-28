@@ -6,7 +6,6 @@
 
 <img width="800" alt="Complete BGR circuit" src="https://github.com/user-attachments/assets/078b7a78-d3d7-4a7e-8d02-357bf971a74c" />
 
-
 The complete circuit is made of four blocks, each of which was covered on an earlier day:
 
 - **SBCM (self-biased current mirror):** MP1, MP2, MN1 and MN2, which set up a supply-independent current (Day 4).
@@ -49,4 +48,99 @@ For example, with I = 10 µA and N = 8, R1 is about 5.4 kΩ. Using the slide val
 
 ## Lab
 
-To be added soon.
+### Circuit
+
+The circuit used for the simulation is shown below.
+
+<img width="800" alt="BGR circuit used in simulation" src="https://github.com/user-attachments/assets/eb7fe610-e9bc-40f6-82d4-290ab73bf489" />
+
+### SPICE code
+
+The SPICE code spans the two images below.
+
+<img width="800" alt="SPICE code, part 1" src="https://github.com/user-attachments/assets/55bc45f4-388c-4259-a63f-721a8c5bfaa8" />
+
+<img width="800" alt="SPICE code, part 2" src="https://github.com/user-attachments/assets/f108dac4-8d7b-4293-88cf-4260bdef9ae2" />
+
+### BGR response
+
+The BGR response is shown below.
+
+<img width="800" alt="Vref vs temperature" src="https://github.com/user-attachments/assets/36312a65-bf9c-43a2-8996-af16aebf12f2" />
+
+We designed for Vref = 1.2 V, but the highest value of Vref in the response is 1.235 V. The curve has the expected umbrella shape, as discussed in the theory. The peak-to-peak variation of Vref is 3.3 mV.
+
+### Verifying the circuit
+
+**1. Equal voltages at the VCVS inputs.** The two inputs of the VCVS should be at the same voltage, so v(qp1) and v(ra1) should be equal (see the circuit diagram).
+
+<img width="800" alt="v(qp1) and v(ra1) vs temperature" src="https://github.com/user-attachments/assets/ae13e051-57b5-44db-ae0c-705f8d914437" />
+
+Both voltages stay at the same level across the whole temperature sweep.
+
+**2. Equal currents in the two branches.** The currents in the branches Vid1 and Vid2 should be the same.
+
+<img width="800" alt="Branch currents Vid1 and Vid2" src="https://github.com/user-attachments/assets/05de6468-a168-4ed8-80f6-c9e03bfc8bd5" />
+
+The current is the same in both branches.
+
+**3. CTAT and PTAT voltages cancel.**
+
+The CTAT voltage is the VBE of Q3.
+
+<img width="800" alt="VBE of Q3 vs temperature" src="https://github.com/user-attachments/assets/8dc594eb-ccee-4a0f-88b8-a26bdf2fbbdb" />
+
+The slope is -1.636 mV/K.
+
+<img width="683" alt="CTAT slope measurement" src="https://github.com/user-attachments/assets/659dae15-0a5c-4408-8ce3-8d1a541b9e28" />
+
+The PTAT voltage is Vref - VBE(Q3).
+
+<img width="800" alt="Vref minus VBE of Q3 vs temperature" src="https://github.com/user-attachments/assets/ae0a4271-90ed-42c5-bc4b-a42c27e32ab1" />
+
+The slope is +1.646 mV/K.
+
+<img width="581" alt="PTAT slope measurement" src="https://github.com/user-attachments/assets/fcded23e-d85b-47a0-b3c7-ee1e077d913e" />
+
+The two slopes are very close in magnitude and opposite in sign, so the CTAT and PTAT voltages cancel. The overall curve is shown below.
+
+<img width="800" alt="Overall Vref curve" src="https://github.com/user-attachments/assets/ba84afdb-09fd-4a80-b5df-72926ccc0aa7" />
+
+**4. Scaling of the PTAT voltage in the reference branch.** The PTAT voltage in the reference branch is
+
+Vref - VBE3 = Vt ln(8) × R2 / R1
+
+while across R1 the PTAT voltage is
+
+V(ra1) - VBE2 = Vt ln(8)
+
+In our circuit R1 = 5 kΩ and R2 = 45 kΩ, so the PTAT slope in the reference branch should be about 9 times the slope across R1.
+
+Slope of the PTAT voltage in the reference branch:
+
+<img width="620" alt="PTAT slope in reference branch" src="https://github.com/user-attachments/assets/645f1c94-2428-408b-8e85-0cf98b746681" />
+
+Slope = 1.638 mV/K
+
+Slope of the PTAT voltage across R1:
+
+<img width="622" alt="PTAT slope across R1" src="https://github.com/user-attachments/assets/a46a7f1d-baac-4852-9e3c-524438bbb336" />
+
+Slope = 0.1897 mV/K
+
+α = 1.638 / 0.1897 ≈ 8.63, which is roughly 9, so the scaling is verified.
+  
+   
+
+   
+   
+
+
+
+
+
+
+
+
+
+
