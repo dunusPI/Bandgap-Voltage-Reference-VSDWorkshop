@@ -46,6 +46,12 @@ As we increase the collector current, the current density increases and the slop
 
 ## Lab 4 Component
 
+### Circuit
+
+The circuit used for the simulation is shown below.
+
+<img width="177" alt="CTAT circuit used in simulation" src="https://github.com/user-attachments/assets/6e880946-a208-48af-8a6f-b3ebcab29d0a" />
+
 ### SPICE code
 
 Below is the SPICE code for the CTAT voltage generation circuit.
