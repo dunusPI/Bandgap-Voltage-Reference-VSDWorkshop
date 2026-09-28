@@ -44,7 +44,7 @@ The more BJTs there are, the more negative the slope becomes. This is because VB
 
 As we increase the collector current, the current density increases and the slope becomes less and less negative.
 
-## Lab
+## Lab 4 Component
 
 ### SPICE code
 
