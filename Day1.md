@@ -69,4 +69,35 @@ It is called a *bandgap* reference because the output voltage, when extrapolated
   <img width="700" alt="BGR principle" src="https://github.com/user-attachments/assets/65aec3aa-10c8-4006-844c-7a6702b7021c" />
 </p>
 
-A BGR is built from two
+A BGR is built from two blocks:
+
+- **CTAT generator**: produces a voltage with a **negative** temperature coefficient (Complementary To Absolute Temperature)
+- **PTAT generator**: produces a voltage with a **positive** temperature coefficient (Proportional To Absolute Temperature)
+
+When the two are combined by a **summing circuit**, their temperature dependencies cancel, giving an output voltage that remains nearly constant over temperature.
+
+---
+
+## 5. BGR Types
+
+<p align="center">
+  <img width="700" alt="BGR types" src="https://github.com/user-attachments/assets/87c931cc-d5bc-4d7f-993c-5e1e6bcec805" />
+</p>
+
+### Self-Biased Current Mirror Based BGR: Advantages and Limitations
+
+<p align="center">
+  <img width="650" alt="Self-biased current mirror BGR advantages and limitations" src="https://github.com/user-attachments/assets/070c3358-e271-4b35-82e2-9534933543b4" />
+</p>
+
+---
+
+## 6. Components of a BGR
+
+<p align="center">
+  <img width="600" alt="Components of BGR" src="https://github.com/user-attachments/assets/013ba6bf-3a5c-4e3a-80a5-39ce5dbcdc70" />
+</p>
+
+---
+
+⬅️ [Back to Main README](../README.md) | ➡️ [Day 2](../Day2)
