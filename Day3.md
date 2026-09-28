@@ -45,6 +45,8 @@ R1 = Vt ln(N) / I
 For example, for I = 10 µA and N = 8, R1 is calculated to be about 5.4 kΩ.
 
 ## Lab 5 Component
+The Circuit simulated is shown below:
+<img width="650" height="365" alt="image" src="https://github.com/user-attachments/assets/c5589297-6ebd-4d43-a7eb-c2651eaad15d" />
 
 ### SPICE code
 
