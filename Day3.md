@@ -80,18 +80,4 @@ For example, for I = 10 µA and N = 8, R1 is calculated to be about 5.4 kΩ.
 
 ## Lab
 
-To be added soon." />
-
-R1 depends on the power consumption and silicon area budget.
-
-R1 = Vt ln(N) / I
-
-- As the circuit current increases, the resistance decreases, and so does the area.
-- As the circuit current decreases, the resistance increases, and so does the area.
-- The resistance value also depends on the number of BJTs used in branch 2 (N).
-
-For example, for I = 10 µA and N = 8, R1 is calculated to be about 5.4 kΩ.
-
-## Lab
-
 To be added soon.
