@@ -4,7 +4,7 @@
 
 ## PTAT Voltage Generation
 
-<img width="800" alt="PTAT voltage generation" src="PASTE-IMAGE-LINK-HERE" />
+<img width="800" alt="PTAT voltage generation" src="https://github.com/user-attachments/assets/fc2bc112-ec2a-4f3c-a6d2-432da9ebe692" />
 
 A PTAT voltage can be generated using two diode-connected BJTs, Q1 and Q2, with an area ratio of 1:N (Q2 is N times larger than Q1). A current mirror, op-amp or VCVS forces nodes A and B to the same voltage V, so the same current I flows through both branches.
 
