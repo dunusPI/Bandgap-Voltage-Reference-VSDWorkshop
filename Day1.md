@@ -1,103 +1,55 @@
-# 📅 Day 1: Introduction to Bandgap Voltage Reference
+# Day 1: Introduction to Bandgap Voltage Reference
 
-## 📘 Concepts Covered
+**Concepts covered:** Introduction to bandgap voltage reference, its applications, the principle of BGR, and the components of a BGR.
 
-- Introduction to Bandgap Voltage Reference (BGR)
-- Why a BGR is needed
-- Applications of BGR
-- Principle of BGR (CTAT + PTAT)
-- BGR types
-- Components of a BGR
+## Introduction to Bandgap
 
----
+<img width="700" alt="Introduction to bandgap" src="https://github.com/user-attachments/assets/18a9d09f-21ad-4d40-b9ad-f8c8a8aa143b" />
 
-## 1. Introduction to Bandgap
+A BGR is a circuit that provides a reference voltage that stays constant regardless of PVT (process, voltage, temperature) variations.
 
-<p align="center">
-  <img width="700" alt="Introduction to bandgap" src="https://github.com/user-attachments/assets/18a9d09f-21ad-4d40-b9ad-f8c8a8aa143b" />
-</p>
+It is called a bandgap voltage reference because, as the temperature tends to 0 K, the output voltage of the BGR extrapolates to about 1.2 V, which is close to the bandgap energy of silicon.
 
-A **Bandgap Voltage Reference (BGR)** is a circuit that provides a stable reference voltage that stays nearly constant across **PVT** variations:
+## Why BGR?
 
-- **P**: Process
-- **V**: Voltage (supply)
-- **T**: Temperature
+- A battery loses voltage over the time of its usage, so it is not suitable where a fixed reference is needed.
+- A power supply gives a noisy output with ripple.
+- A voltage reference IC with a Zener diode is viable, but it is external, needs additional resistors and capacitors to change the voltage, and is not useful for low-voltage applications.
 
-It is called a *bandgap* reference because the output voltage, when extrapolated to 0 K, is about **1.2 V**, which is close to the bandgap energy of silicon.
+A BGR is useful because it can be integrated into any process technology (CMOS, BiCMOS, Bipolar) without the need for external components.
 
----
+## Applications of BGR
 
-## 2. Why BGR?
+**1. Low Dropout Regulators**
 
-| Option | Limitation |
-|--------|------------|
-| **Battery** | Loses voltage over time as it is used, so it cannot serve as a fixed reference |
-| **Power supply** | Output is noisy and has ripple |
-| **Zener diode reference IC** | External, needs additional resistors and capacitors to change the voltage, and is not suitable for low-voltage applications |
+<img width="450" alt="LDO" src="https://github.com/user-attachments/assets/b7a2440c-beae-4c51-9d3a-c097ccb22d68" />
 
-✅ **A BGR solves these problems.** It can be integrated on-chip in **CMOS, BiCMOS, and Bipolar** technologies without any external components.
+**2. DC-DC Buck Converters**
 
----
+<img width="550" alt="DC-DC buck converter" src="https://github.com/user-attachments/assets/298cf9a6-54a0-4e61-be88-e8cff73a24b5" />
 
-## 3. Applications of BGR
+**3. Analog to Digital Converters**
 
-### 🔹 Low Dropout Regulators (LDO)
-<p align="center">
-  <img width="450" alt="LDO" src="https://github.com/user-attachments/assets/b7a2440c-beae-4c51-9d3a-c097ccb22d68" />
-</p>
+<img width="450" alt="ADC" src="https://github.com/user-attachments/assets/320aeb0f-1ce7-40aa-96fe-d78fb2a5dc5c" />
 
-### 🔹 DC-DC Buck Converters
-<p align="center">
-  <img width="550" alt="DC-DC Buck Converter" src="https://github.com/user-attachments/assets/298cf9a6-54a0-4e61-be88-e8cff73a24b5" />
-</p>
+**4. Digital to Analog Converters**
 
-### 🔹 Analog to Digital Converters (ADC)
-<p align="center">
-  <img width="450" alt="ADC" src="https://github.com/user-attachments/assets/320aeb0f-1ce7-40aa-96fe-d78fb2a5dc5c" />
-</p>
+<img width="600" alt="DAC" src="https://github.com/user-attachments/assets/1fdf696b-479d-4bde-8677-a46c1a677bb4" />
 
-### 🔹 Digital to Analog Converters (DAC)
-<p align="center">
-  <img width="600" alt="DAC" src="https://github.com/user-attachments/assets/1fdf696b-479d-4bde-8677-a46c1a677bb4" />
-</p>
+## Bandgap Voltage Reference Principle
 
----
+<img width="700" alt="BGR principle" src="https://github.com/user-attachments/assets/65aec3aa-10c8-4006-844c-7a6702b7021c" />
 
-## 4. Bandgap Voltage Reference Principle
+The BGR consists of a CTAT voltage generation circuit, which has a negative temperature coefficient, and a PTAT voltage generation circuit, which has a positive temperature coefficient. When both are combined by a summing circuit, we get a voltage that remains constant regardless of temperature.
 
-<p align="center">
-  <img width="700" alt="BGR principle" src="https://github.com/user-attachments/assets/65aec3aa-10c8-4006-844c-7a6702b7021c" />
-</p>
+## BGR Types
 
-A BGR is built from two blocks:
+<img width="700" alt="BGR types" src="https://github.com/user-attachments/assets/87c931cc-d5bc-4d7f-993c-5e1e6bcec805" />
 
-- **CTAT generator**: produces a voltage with a **negative** temperature coefficient (Complementary To Absolute Temperature)
-- **PTAT generator**: produces a voltage with a **positive** temperature coefficient (Proportional To Absolute Temperature)
+### Self-biased current mirror based BGR: advantages and limitations
 
-When the two are combined by a **summing circuit**, their temperature dependencies cancel, giving an output voltage that remains nearly constant over temperature.
+<img width="650" alt="Self-biased current mirror BGR" src="https://github.com/user-attachments/assets/070c3358-e271-4b35-82e2-9534933543b4" />
 
----
+## Components of BGR
 
-## 5. BGR Types
-
-<p align="center">
-  <img width="700" alt="BGR types" src="https://github.com/user-attachments/assets/87c931cc-d5bc-4d7f-993c-5e1e6bcec805" />
-</p>
-
-### Self-Biased Current Mirror Based BGR: Advantages and Limitations
-
-<p align="center">
-  <img width="650" alt="Self-biased current mirror BGR advantages and limitations" src="https://github.com/user-attachments/assets/070c3358-e271-4b35-82e2-9534933543b4" />
-</p>
-
----
-
-## 6. Components of a BGR
-
-<p align="center">
-  <img width="600" alt="Components of BGR" src="https://github.com/user-attachments/assets/013ba6bf-3a5c-4e3a-80a5-39ce5dbcdc70" />
-</p>
-
----
-
-⬅️ [Back to Main README](../README.md) | ➡️ [Day 2](../Day2)
+<img width="600" alt="Components of BGR" src="https://github.com/user-attachments/assets/013ba6bf-3a5c-4e3a-80a5-39ce5dbcdc70" />
