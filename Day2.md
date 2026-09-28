@@ -46,4 +46,38 @@ As we increase the collector current, the current density increases and the slop
 
 ## Lab
 
-To be added soon.
+### SPICE code
+
+Below is the SPICE code for the CTAT voltage generation circuit.
+
+<img width="767" alt="SPICE code for CTAT circuit" src="https://github.com/user-attachments/assets/dc3234aa-2f75-4c01-b92b-9f0604f4aa97" />
+
+### VBE vs temperature
+
+The voltage vs temperature curve is shown below.
+
+<img width="800" alt="VBE vs temperature" src="https://github.com/user-attachments/assets/3ac41726-fadd-428e-91f7-1717390446c1" />
+
+- Slope measured from simulation: -1.723 mV/K
+- Slope from theoretical calculation: -1.88 mV/K
+
+### Effect of the number of BJTs
+
+The voltage vs temperature curve for m = 8 (BJT multiplier) is shown below.
+
+<img width="800" alt="VBE vs temperature for m = 8" src="https://github.com/user-attachments/assets/cf549510-bb7c-43bd-943e-92abc0119350" />
+
+The slope measured from simulation is -1.91 mV/K, which is more negative than for a single BJT, in line with the discussion above.
+
+### Effect of the collector current
+
+The voltage vs temperature curve for a varying current is shown below. The current was varied from 1.25 µA to 10 µA.
+
+<img width="800" alt="VBE vs temperature for varying current" src="https://github.com/user-attachments/assets/6e894485-6864-4ea1-ad2f-34f58410aacb" />
+
+- Slope at 10 µA: -1.7345 mV/K
+- Slope at 1.25 µA: -1.918 mV/K
+
+The slope becomes less negative as the current increases, in line with the discussion above.
+
+<img width="491" alt="Slope measurements for varying current" src="https://github.com/user-attachments/assets/fb90698f-95f6-4662-af40-b6b753d3fed8" />
