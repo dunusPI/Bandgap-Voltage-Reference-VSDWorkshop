@@ -1,39 +1,72 @@
-Day 1- 
-Concepts covered: Introduction to Bandgap Voltage Reference, its applications and the principles of BGR.
+# 📅 Day 1: Introduction to Bandgap Voltage Reference
 
+## 📘 Concepts Covered
 
-Introduction to bandgap
-<img width="1350" height="763" alt="image" src="https://github.com/user-attachments/assets/18a9d09f-21ad-4d40-b9ad-f8c8a8aa143b" />
-A BGR is a type of circuit that provides a reference voltage thats constant regardless of PVT(process, voltage, Temperature) variations
-Its called Bandgap Voltage reference because, as the temperature tends to zero the output voltage of BGR is 1.2V which is close to the band gap energy of silicon
+- Introduction to Bandgap Voltage Reference (BGR)
+- Why a BGR is needed
+- Applications of BGR
+- Principle of BGR (CTAT + PTAT)
+- BGR types
+- Components of a BGR
 
+---
 
-Why BGR?
-A battery over the time of its usage it looses its voltage and drops, and hence not suitable to a reference voltage where there is a need for fixed reference.
-A power supply is not suitable its gives a noisy output and ripples.
-A voltage reference IC with a Zener diode is viable but its external and additional resistors and capacitors are required for changing voltage and not useful for low voltage applications.
+## 1. Introduction to Bandgap
 
-A BGR is useful as it can be integrated into any process technologies with CMOS, Bi-CMOS, Bipolar without the need on external components
+<p align="center">
+  <img width="700" alt="Introduction to bandgap" src="https://github.com/user-attachments/assets/18a9d09f-21ad-4d40-b9ad-f8c8a8aa143b" />
+</p>
 
-Applications Of BGR
+A **Bandgap Voltage Reference (BGR)** is a circuit that provides a stable reference voltage that stays nearly constant across **PVT** variations:
 
-1. Low Dropout regulators
-   <img width="580" height="650" alt="image" src="https://github.com/user-attachments/assets/b7a2440c-beae-4c51-9d3a-c097ccb22d68" />
+- **P**: Process
+- **V**: Voltage (supply)
+- **T**: Temperature
 
-2. DC-DC Buck Converters
-   <img width="721" height="605" alt="image" src="https://github.com/user-attachments/assets/298cf9a6-54a0-4e61-be88-e8cff73a24b5" />
+It is called a *bandgap* reference because the output voltage, when extrapolated to 0 K, is about **1.2 V**, which is close to the bandgap energy of silicon.
 
-3. Analog to Digital Converter
-   <img width="556" height="615" alt="image" src="https://github.com/user-attachments/assets/320aeb0f-1ce7-40aa-96fe-d78fb2a5dc5c" />
+---
 
-4. Digital to Analog Converter
-   <img width="761" height="484" alt="image" src="https://github.com/user-attachments/assets/1fdf696b-479d-4bde-8677-a46c1a677bb4" />
+## 2. Why BGR?
 
-Bandgap Voltage Reference Principle
-<img width="1241" height="730" alt="image" src="https://github.com/user-attachments/assets/65aec3aa-10c8-4006-844c-7a6702b7021c" />
-The BGR consists of a CTAT voltage generation circuit, which shows a negative TC
+| Option | Limitation |
+|--------|------------|
+| **Battery** | Loses voltage over time as it is used, so it cannot serve as a fixed reference |
+| **Power supply** | Output is noisy and has ripple |
+| **Zener diode reference IC** | External, needs additional resistors and capacitors to change the voltage, and is not suitable for low-voltage applications |
 
-   
+✅ **A BGR solves these problems.** It can be integrated on-chip in **CMOS, BiCMOS, and Bipolar** technologies without any external components.
 
+---
 
+## 3. Applications of BGR
 
+### 🔹 Low Dropout Regulators (LDO)
+<p align="center">
+  <img width="450" alt="LDO" src="https://github.com/user-attachments/assets/b7a2440c-beae-4c51-9d3a-c097ccb22d68" />
+</p>
+
+### 🔹 DC-DC Buck Converters
+<p align="center">
+  <img width="550" alt="DC-DC Buck Converter" src="https://github.com/user-attachments/assets/298cf9a6-54a0-4e61-be88-e8cff73a24b5" />
+</p>
+
+### 🔹 Analog to Digital Converters (ADC)
+<p align="center">
+  <img width="450" alt="ADC" src="https://github.com/user-attachments/assets/320aeb0f-1ce7-40aa-96fe-d78fb2a5dc5c" />
+</p>
+
+### 🔹 Digital to Analog Converters (DAC)
+<p align="center">
+  <img width="600" alt="DAC" src="https://github.com/user-attachments/assets/1fdf696b-479d-4bde-8677-a46c1a677bb4" />
+</p>
+
+---
+
+## 4. Bandgap Voltage Reference Principle
+
+<p align="center">
+  <img width="700" alt="BGR principle" src="https://github.com/user-attachments/assets/65aec3aa-10c8-4006-844c-7a6702b7021c" />
+</p>
+
+A BGR is built from two
