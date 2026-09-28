@@ -43,6 +43,3 @@ The second issue will be dealt with later.
 
 <img width="800" alt="Advantages and limitations" src="https://github.com/user-attachments/assets/3173adc4-f94f-4d1a-9ffe-4b583861ff09" />
 
-## Lab
-
-To be added soon.
