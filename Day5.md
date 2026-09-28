@@ -56,6 +56,4 @@ Solving for α:
 
 For N = 8, ln(8) ≈ 2.08, so α ≈ 9 and R2 = 9 × R1.
 
-## Lab
 
-To be added soon.
