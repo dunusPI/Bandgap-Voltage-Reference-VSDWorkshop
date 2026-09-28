@@ -2,7 +2,7 @@
 
 **Concepts covered:** Transient simulation of the complete BGR circuit, the start-up behaviour, and the circuit without the start-up block.
 
-## Lab
+## Lab 8 Component
 
 ### Circuit
 
