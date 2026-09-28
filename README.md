@@ -1,4 +1,4 @@
-<h1 align="center">🔋 Bandgap Voltage Reference — VSD Workshop</h1>
+<h1 align="center">🔋 Bandgap Voltage Reference: VSD Workshop</h1>
 
 <p align="center">
   Documentation of concepts and hands-on lab experiments from the <b>Bandgap Voltage Reference (BGR)</b> workshop conducted by <b>VSD</b>.
@@ -20,17 +20,19 @@ This repository documents my learning journey through the VSD Bandgap Voltage Re
 ## 🗂️ Repository Structure
 
 The documentation is organized day-wise:
+
+```
 Bandgap-Voltage-Reference-VSDWorkshop/
 ├── Day1/
-│ └── README.md
+│   └── README.md
 ├── Day2/
-│ └── README.md
+│   └── README.md
 ├── Day3/
-│ └── README.md
+│   └── README.md
 └── ...
+```
 
-
-Each `Day` folder contains a `README.md` documenting:
+Each `DayN` folder contains a `README.md` documenting:
 
 - 📘 **Concepts** covered that day
 - 🧪 **Lab experiments** performed
@@ -46,7 +48,7 @@ Each `Day` folder contains a `README.md` documenting:
 
 ## 🛠️ Tools Used
 
-- _NgSPice, Netgen, Magic_
+- _List the simulators/tools used in the labs_
 
 ## 🙏 Acknowledgements
 
