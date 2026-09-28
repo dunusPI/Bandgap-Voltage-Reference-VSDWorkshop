@@ -46,7 +46,7 @@ The design flow is then:
 
 For example, with I = 10 µA and N = 8, R1 is about 5.4 kΩ. Using the slide values of -1.6 mV/°C and 85 µV/°C, α is about 9, so R2 is about 49 kΩ and Vref is about 1.2 V.
 
-## Lab
+## Lab 6 Component
 
 ### Circuit
 
